@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagens/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/style2.css">
+    <title>FIDEC - Área de Sócio</title>
+</head>
+<body>
+
+<nav>
+    <a href="#" onclick="showSection('home')">Início</a>
+    <a href="#" id="nav-socio" onclick="showSection('socio-area')">Área de Sócio</a>
+    <a href="index.html" target="_blank">Voltar</a>
+    <button id="authBtn" onclick="toggleModal()">Login</button>
+</nav>
+
+<section id="home" class="active">
+    <h1>Bem-vindo ao FIDEC</h1>
+    <p>O clube da Quinta do Gato. Junte-se a nós e torne-se sócio.</p>
+</section>
+
+<section id="socio-area">
+    <h2>O Teu Cartão Digital</h2>
+    <div class="card-wrapper">
+        <div class="digital-card">
+    <img src="imagens/logo.png" alt="FIDEC" class="card-logo">
+    <div style="position: absolute; top: 25px; right: 25px; text-align: right;">
+        <span class="card-label">Nº Sócio</span>
+        <span class="card-value" id="card-number" style="font-size: 16px;">0000</span>
+    </div>
+
+    <span class="card-label">Sócio Oficial</span>
+    <span class="card-value" id="card-name">---</span>
+    
+    <div class="card-footer">
+        <div>
+            <span class="card-label">Válido Até</span>
+            <span class="card-value" id="card-date" style="font-size: 14px;">--/--/----</span>
+        </div>
+        <div style="text-align: right;">
+            <span class="card-label">Status</span>
+            <span class="card-value" style="color: var(--primary); font-size: 14px;">Ativo</span>
+        </div>
+    </div>
+</div>
+    </div>
+</section>
+
+<div id="admin-panel" class="admin-panel">
+    <strong>Gestão de Sócios 👑</strong>
+    <select id="admin-user-list"></select>
+    
+    <label style="font-size: 11px; color: #666;">Número de Sócio:</label>
+    <input type="number" id="admin-number" placeholder="Ex: 1924">
+    
+    <label style="font-size: 11px; color: #666;">Validade:</label>
+    <input type="date" id="admin-date">
+    
+    <button class="btn-black" onclick="grantMembership()">Ativar/Atualizar Sócio</button>
+    <button onclick="removeMembership()" style="width: 100%; padding: 10px; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; margin-top: 5px; background: #ffcccc; color: #cc0000;">Remover Estatuto</button>
+    
+    <button onclick="logout()" style="margin-top: 15px; background: #eee; width: 100%; border: none; padding: 10px; border-radius: 6px; cursor: pointer;">Sair da Conta</button>
+</div>
+
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <h3>Aceder à Conta</h3>
+        <input type="text" id="login-user" placeholder="Utilizador" style="width: 100%; margin-bottom: 10px; padding: 10px;">
+        <input type="password" id="login-pass" placeholder="Password" style="width: 100%; margin-bottom: 10px; padding: 10px;">
+        <button class="btn-black" onclick="handleLogin()" style="width: 100%; padding: 10px;">Entrar</button>
+        <button onclick="handleRegister()" style="width: 100%; padding: 10px; margin-top: 5px; background: none; border: none; color: #666;">Criar Nova Conta</button>
+    </div>
+</div>
+
+<script src="js/js2.js"></script>
+
+</body>
+</html>

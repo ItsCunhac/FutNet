@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="imagens/logo.png" type="image/png">
+    <title>FIDEC | Site Oficial</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <img src="imagens/logo.png" alt="Logotipo FIDEC" />
+    <h1>F.I.D.E.C</h1>
+    <p>QUINTA DO GATO · AVEIRO</p>
+</header>
+
+<nav id="mainNav">
+    <a href="#" class="active-link" onclick="mostrar('historia', this)">História</a>
+    <a href="#" onclick="mostrar('percurso', this)">Percurso</a>
+    <a href="#" onclick="mostrar('calendario', this)">Calendário</a>
+    <a href="#" onclick="mostrar('plantel', this)">Plantel</a>
+    <a href="#" onclick="mostrar('plantel2', this)">Plantel Sub 17</a>
+    <a href="#" onclick="mostrar('mapa', this)">Estádio</a>
+    <a href="#" onclick="mostrar('inscricoes', this)">Inscrições</a>
+    <a href="Aba Socio.html" target="_blank" style="color: var(--primary)">Sócio</a>
+    <a href="Noticias.html" onclick="mostrar('noticias', this)">Notícias</a>
+    <a href="#" onclick="mostrar('galeria', this)">Galeria</a>
+    <a href="https://www.facebook.com/fidec14" onclick="mostrar('contato', this)">Contato</a>
+</nav>
+
+<section id="historia" class="active">
+    <h2>História do Clube</h2>
+    <p>
+A FIDEC, foi fundada no dia 20 de Abril de 1977, e desde a sua fundação até à atualidade prática as suas funções centradas no apoio, acompanhamento e desenvolvimento de jovens através da prática do desporto.
+
+situa-se na Freguesia de Santa Joana na cidade de Aveiro, zona pacata, onde se situam dois complexos habitacionais sociais e onde o foco da FIDEC, é proporcionar aos jovens com carência económica, igualdade e equidade, no âmbito desportivo e social,
+
+no início a Associação, centrou-se na prática de futebol e ciclismo. No ciclismo a Associação organizou vários eventos e participou em diversas provas de estrada, mas infelizmente este projeto acabou por ser terminado devido à falta de apoio e verbas, sendo difícil para a associação manter despesas avultadas em relação à prática deste desporto,
+A modalidade de futebol foi mantida ao longo dos anos pela Associação, apesar de todos os anos ser uma tarefa árdua fazer face a todas as dificuldades,
+
+a FIDEC, já teve equipas em vários escalões, Seniores Masculinos no campeonato distrital, futebol feminino sénior em competição no Nacional, ambas com excelentes resultados,
+Estas equipas para além de proporcionar sucesso desportivo à Associação, também envolvem a comunidade da Freguesia de Santa Joana e Freguesias vizinhas a participar no espetáculo que é um evento desportivo, sendo com certeza um fator de dinamismo para o Município,
+
+este projeto manteve-se até ao ano de 2005, que por devido a falta de apoios foi abandonado por parte da direção por não ter capacidades financeiras para manter este projeto de grande envergadura,
+
+desde a fundação da Associação, existiram sempre equipas de formação no ativo, tais como os escalões de infantis, iniciados, juvenis e juniores. Algumas equipas destes escalões estiveram presentes na 1ª divisão distrital, outro na 2º divisão obtendo sempre bons resultados,
+
+no ano de 2017, a Associação decidiu abrir novamente o escalão sénior, onde estive presente na competição Inatel por duas épocas seguidas, no qual foi forçado a desistir novamente do projeto devido a falta de verbas e apoios,
+
+na presente época a FIDEC, tem três equipas inscritas nos campeonatos da Associação de Futebol de Aveiro, nomeadamente os escalões de Sub11, Sub17 e Sub23. No início desta época a Associação tinha previsto a reativação da equipa feminina onde o Clube contou com 14 jogadoras, mas como a Associação não tem forma de oferecer as melhores condições (de momento) para a equipa feminina o Clube viu-se forçado em desistir do projeto.</p>
+</section>
+
+<section id="percurso">
+    <h2>Percurso Desportivo</h2>
+    <p>O clube tem vindo a crescer nas competições regionais, destacando-se pela formação Sub-17 e pela equipa Sénior.</p>
+</section>
+
+<section id="calendario" class="container">
+    <header>
+        <h1>Calendário de Jogos</h1>
+        <div class="linha"></div>
+    </header>
+
+    <div class="filter-bar">
+        <button class="filter-btn active" onclick="filtrarJogos('todos')">Todos</button>
+        <button class="filter-btn" onclick="filtrarJogos('proximos')">Próximos</button>
+        <button class="filter-btn" onclick="filtrarJogos('passados')">Resultados</button>
+    </div>
+
+    <div id="calendar-grid" class="calendar-grid">
+        </div>
+</section>
+
+<section id="plantel">
+    <div class="container-futebol">
+        <div class="campo">
+            <div class="linha-meio"></div>
+            <div class="circulo-central"></div>
+            <div class="area-penalti topo"></div>
+            <div class="area-penalti baixo"></div>
+
+            <div class="jogador" style="bottom: 5%; left: 50%;">
+                <div class="bola">1</div>
+                <span>David Ferreira</span>
+            </div>
+
+            <div class="jogador" style="bottom: 18%; left: 15%;"> <div class="bola">2</div> <span>Leonardo Batista</span> </div>
+            <div class="jogador" style="bottom: 15%; left: 38%;"> <div class="bola">3</div> <span>Diogo Anileiro</span> </div>
+            <div class="jogador" style="bottom: 15%; left: 62%;"> <div class="bola">15</div> <span>Pedro Almeida</span> </div>
+            <div class="jogador" style="bottom: 18%; left: 85%;"> <div class="bola">6</div> <span>Andre Henriques</span> </div>
+
+            <div class="jogador" style="bottom: 35%; left: 30%;"> <div class="bola">19</div> <span>Dixon Rincon</span> </div>
+            <div class="jogador" style="bottom: 35%; left: 70%;"> <div class="bola">4</div> <span>Luis Sousa</span> </div>
+            <div class="jogador" style="bottom: 52%; left: 50%;"> <div class="bola">7</div> <span>Germán Romero</span> </div>
+
+            <div class="jogador" style="top: 15%; left: 15%;"> <div class="bola">5</div> <span>Diogo Santos</span> </div>
+            <div class="jogador" style="top: 10%; left: 50%;"> <div class="bola">9</div> <span>Joao Marinha</span> </div>
+            <div class="jogador" style="top: 15%; left: 85%;"> <div class="bola">11</div> <span>Mauro Sousa</span> </div>
+        </div>
+
+        <div class="banco-contentor">
+            <h3>Banco de Suplentes</h3>
+            <div class="grelha-suplentes">
+                <div class="suplente"> <div class="bola-mini">8</div> <span>João Miguel</span> </div>
+                <div class="suplente"> <div class="bola-mini">3</div> <span>Rúben Matos</span> </div>
+                <div class="suplente"> <div class="bola-mini">11</div> <span>Luis Soares</span> </div>
+                <div class="suplente"> <div class="bola-mini">13</div> <span>Paulo Sumbula</span> </div>
+                <div class="suplente"> <div class="bola-mini">11</div> <span>Alexandre Oliveira</span> </div>
+                <div class="suplente"> <div class="bola-mini">13</div> <span>Tomas Pinto</span> </div>
+                <div class="suplente"> <div class="bola-mini">1</div> <span>Miguel Ferreira</span> </div>
+                <div class="suplente"> <div class="bola-mini">3</div> <span>Nuno Henriques</span> </div>
+                <div class="suplente"> <div class="bola-mini">10</div> <span>Fransico Roque</span> </div>
+                <div class="suplente"> <div class="bola-mini">11</div> <span>Leandro Silva</span> </div>
+                <div class="suplente"> <div class="bola-mini">9</div> <span>Daniel Santos</span> </div>
+                <div class="suplente"> <div class="bola-mini">6</div> <span>Ramon Filho</span> </div>
+                <div class="suplente"> <div class="bola-mini">7</div> <span>João Ferreira</span> </div>
+                <div class="suplente"> <div class="bola-mini">8</div> <span>Alberto Fernandes</span> </div>
+                <div class="suplente"> <div class="bola-mini">14</div> <span>Renato Sereno</span> </div>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+
+<section id="plantel2">
+    <div class="container-futebol">
+        <div class="campo">
+            <div class="linha-meio"></div>
+            <div class="circulo-central"></div>
+            <div class="area-penalti topo"></div>
+            <div class="area-penalti baixo"></div>
+
+            <div class="jogador" style="bottom: 5%; left: 50%;">
+                <div class="bola">1</div>
+                <span>Ricardo Nunes</span>
+            </div>
+
+            <div class="jogador" style="bottom: 18%; left: 15%;"> <div class="bola">5</div> <span>Santiago Fernandes</span> </div>
+            <div class="jogador" style="bottom: 15%; left: 38%;"> <div class="bola">11</div> <span>Simão Fernandes</span> </div>
+            <div class="jogador" style="bottom: 15%; left: 62%;"> <div class="bola">6</div> <span>João Costa</span> </div>
+            <div class="jogador" style="bottom: 18%; left: 85%;"> <div class="bola">2</div> <span>Pedro Nunes</span> </div>
+
+            <div class="jogador" style="bottom: 35%; left: 30%;"> <div class="bola">14</div> <span>Muhamad Carsane</span> </div>
+            <div class="jogador" style="bottom: 35%; left: 70%;"> <div class="bola">15</div> <span>Diogo Ferreira</span> </div>
+            <div class="jogador" style="bottom: 52%; left: 50%;"> <div class="bola">10</div> <span>Dinis Cunha</span> </div>
+
+            <div class="jogador" style="top: 15%; left: 15%;"> <div class="bola">7</div> <span>Leonardo Pina</span> </div>
+            <div class="jogador" style="top: 10%; left: 50%;"> <div class="bola">2</div> <span>Arthur Teixeira</span> </div>
+            <div class="jogador" style="top: 15%; left: 85%;"> <div class="bola">9</div> <span>Heitor Cipriano</span> </div>
+        </div>
+
+        <div class="banco-contentor">
+            <h3>Banco de Suplentes</h3>
+            <div class="grelha-suplentes">
+                <div class="suplente"> <div class="bola-mini">4</div> <span>Gustavo Resende</span> </div>
+                <div class="suplente"> <div class="bola-mini">16</div> <span>Nóa Burgkamp</span> </div>
+                <div class="suplente"> <div class="bola-mini">3</div> <span>Marco Figueiredo</span> </div>
+                <div class="suplente"> <div class="bola-mini">14</div> <span>Francisco Alves</span> </div>
+                <div class="suplente"> <div class="bola-mini">15</div> <span>Frederico Santos</span> </div>
+                <div class="suplente"> <div class="bola-mini">4</div> <span>Renato Pinto</span> </div>
+                <div class="suplente"> <div class="bola-mini">16</div> <span>Diogo Ferreira</span> </div>
+                <div class="suplente"> <div class="bola-mini">9</div> <span>Carlos Braga</span> </div>
+                <div class="suplente"> <div class="bola-mini">11</div> <span>Adrien Coutinho</span> </div>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+
+<section id="mapa">
+    <h2>Localização do Estádio</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.0517147392666!2d-8.613656124309896!3d40.62874147140629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd23a27c98ffe965%3A0x479d82d8c40f3416!2sParque%20Desportivo%20S%C3%A3o%20Br%C3%A1s!5e0!3m2!1spt-PT!2spt!4v1774014931666!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section id="inscricoes">
+    <h2>Inscrição Sub-17</h2>
+    <form onsubmit="event.preventDefault(); alert('Inscrição enviada com sucesso!');">
+        <input type="text" placeholder="Nome Completo do Atleta" required>
+        <input type="number" placeholder="Idade" required>
+        <input type="email" placeholder="Email do Encarregado de Educação" required>
+        <button type="submit">Submeter Candidatura</button>
+    </form>
+</section>
+
+<section id="galeria" class="galeria-container">
+    <h2>Galeria Fotos Fidec</h2>
+    
+    <div class="galeria-grid">
+        <div class="foto"><img src="imagens/Imagem 1.jpg" alt="Foto 1"></div>
+        <div class="foto"><img src="imagens/Imagem 2.jpg" alt="Foto 2"></div>
+        <div class="foto"><img src="imagens/Imagem 3.avif" alt="Foto 3"></div>
+        <div class="foto"><img src="imagens/Imagem 4.avif" alt="Foto 4"></div>
+        <div class="foto"><img src="imagens/Imagem 5.avif" alt="Foto 5"></div>
+        <div class="foto"><img src="imagens/Imagem 6.avif" alt="Foto 6"></div>
+        <div class="foto"><img src="imagens/Imagem 7.avif" alt="Foto 7"></div>
+        <div class="foto"><img src="imagens/Imagem 8.avif" alt="Foto 8"></div>
+        <div class="foto"><img src="imagens/Imagem 9.avif" alt="Foto 9"></div>
+        <div class="foto"><img src="imagens/Imagem 10.avif" alt="Foto 10"></div>
+        <div class="foto"><img src="imagens/Imagem 11.avif" alt="Foto 11"></div>
+        <div class="foto"><img src="imagens/Imagem 12.avif" alt="Foto 12"></div>
+        <div class="foto"><img src="imagens/Imagem 13.avif" alt="Foto 13"></div>
+        <div class="foto"><img src="imagens/Imagem 14.avif" alt="Foto 14"></div>
+        <div class="foto"><img src="imagens/Imagem 15.avif" alt="Foto 15"></div>
+    </div>
+</section>
+
+<footer>
+    <p>F.I.D.E.C - Quinta do Gato, Aveiro</p>
+    <p>© 2026 Todos os direitos reservados</p>
+</footer>
+
+<script src="js/js1.js"></script>
+
+</body>
+</html>
