@@ -8,8 +8,7 @@
         });
 
         document.getElementById(id).classList.add('active');
-        
-        // Ativar o link correto
+
         if(element) {
             element.classList.add('active-link');
         }
